@@ -1,4 +1,4 @@
-![]([https://github.com/luxiangqiang/Blog/blob/master/images/%E5%B0%8F%E9%B9%BF%E7%9A%84blog.png](https://github.com/luxiangqiang/Blog/blob/master/images/小鹿的blog.png))
+![å°é¹¿çblog.png](https://github.com/luxiangqiang/Blog/blob/master/images/%E5%B0%8F%E9%B9%BF%E7%9A%84blog.png?raw=true)
 
 # 小鹿的博客
 

@@ -10,6 +10,10 @@ TCP 三次握手过程对于面试是必考的一个，所以不但要掌握 TCP
 
 ### 学习导图
 
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/思维导图.png)
+
+
+
 ### 一、TCP 是什么？
 
 `TCP（Transmission Control Protocol 传输控制协议）`是一种面向连接的、可靠的、基于字节流的传输层通信协议。
@@ -20,8 +24,11 @@ TCP 三次握手过程对于面试是必考的一个，所以不但要掌握 TCP
 
 
 
-
 ### 二、TCP 头部报文
+
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/%E5%A4%B4%E9%83%A8%E6%8A%A5%E6%96%87.png](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/头部报文.png)
+
+
 
 #### 2.1 `source port` 和 `destination port`
 
@@ -31,9 +38,7 @@ TCP 三次握手过程对于面试是必考的一个，所以不但要掌握 TCP
 
 可以这么理解，我们可以想象发送方很多的窗户，接收方也有很多的窗户，这些窗口都标有不同的端口号，源端口号和目的端口号就分别代表从哪个规定的串口发送到对方接收的窗口。不同的应用程度都有着不同的端口，之前网络分层的文章中有提到过。
 
-
-
-
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/%E6%BA%90%E7%9B%AE%E7%9A%84%E7%AB%AF%E5%8F%A3%E5%8F%B7.png](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/源目的端口号.png)
 
 
 
@@ -45,6 +50,8 @@ TCP 三次握手过程对于面试是必考的一个，所以不但要掌握 TCP
 >称为「序列号」。用于 TCP 通信过程中某一传输方向上字节流的每个字节的编号，为了确保数据通信的有序性，避免网络中乱序的问题。接收端根据这个编号进行确认，保证分割的数据段在原始数据包的位置。
 
 
+
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/Sqn.gif](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/Sqn.gif)
 
 
 
@@ -74,7 +81,7 @@ TCP 三次握手过程对于面试是必考的一个，所以不但要掌握 TCP
 ##### 2.4.1 `ACK`
 这个标识可以理解为发送端发送数据到接收端，发送的时候 ACK 为 0，标识接收端还未应答，一旦接收端接收数据之后，就将 ACK 置为 1，发送端接收到之后，就知道了接收端已经接收了数据。
 
-
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/ACK.gif](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/ACK.gif)
 
 
 
@@ -87,7 +94,7 @@ TCP 三次握手过程对于面试是必考的一个，所以不但要掌握 TCP
 
 用来建立 TCP 的连接。SYN 标志位和 ACK 标志位搭配使用，当连接请求的时候，SYN=1，ACK=0连接被响应的时候，SYN=1，ACK=1；这个标志的数据包经常被用来进行端口扫描。扫描者发送一个只有 SYN 的数据包，如果对方主机响应了一个数据包回来 ，就表明这台主机存在这个端口。看下面动画：
 
-
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/SYN.gif](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/SYN.gif)
 
 
 
@@ -96,7 +103,7 @@ TCP 三次握手过程对于面试是必考的一个，所以不但要掌握 TCP
 
 这个很好理解，就是说，发送端只剩最后的一段数据了，同时要告诉接收端后边没有数据可以接受了，所以用FIN标识一下，接收端看到这个FIN之后，哦！这是接受的最后的数据，接受完就关闭了。动画如下：
 
-
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/FIN.gif](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/FIN.gif)
 
 #### 2.5 `Window size`
 称为滑动窗口大小。所说的滑动窗口，用来进行流量控制。
@@ -117,27 +124,29 @@ TCP 三次握手过程对于面试是必考的一个，所以不但要掌握 TCP
 ### 4、TCP 三次握手过程？
 TCP 三次握手的过程掌握最重要的两点就是客户端和服务端状态的变化，另一个是三次握手过程标志信息的变化，那么掌握 TCP 的三次握手就简单多了。下面我们就以动画形式进行拆解三次握手过程。
 
-
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%BE.png](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/三次握手图.png)
 
 - <font color=#A52A2A face="黑体">**初始状态**</font>：客户端处于 `closed(关闭) `状态，服务器处于 `listen(监听) ` 状态。
 
-
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/%E5%88%9D%E5%A7%8B%E5%8C%96%E7%8A%B6%E6%80%81.png](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/初始化状态.png)
 
 
 
 -  <font color=#A52A2A face="黑体">**第一次握手**</font>：客户端发送请求报文将 `SYN = 1 `同步序列号和初始化序列号`seq = x`发送给服务端，发送完之后客户端处于` SYN_Send `状态。
 
-
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8F%A1%E6%89%8B.gif](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/第一次握手.gif)
 
 
 
 - <font color=#A52A2A face="黑体">**第二次握手**</font>：服务端受到 `SYN` 请求报文之后，如果同意连接，会以自己的同步序列号`SYN(服务端) = 1`、初始化序列号 `seq = y`和确认序列号（期望下次收到的数据包）`ack = x+ 1` 以及确认号`ACK = 1`报文作为应答，服务器为`SYN_Receive `状态。
 
-
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%8F%A1%E6%89%8B.gif](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/第二次握手.gif)
 
 
 
 - <font color=#A52A2A face="黑体">**第三次握手**</font>： 客户端接收到服务端的 `SYN + ACK`之后，知道可以下次可以发送了下一序列的数据包了，然后发送同步序列号 `ack = y  + 1`和数据包的序列号 `seq = x + 1`以及确认号`ACK = 1`确认包作为应答，客户端转为`established`状态。
+
+[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.gif](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/第三次握手.gif)
 
 
 
@@ -145,3 +154,4 @@ TCP 三次握手的过程掌握最重要的两点就是客户端和服务端状�
 >防止了服务器端的一直等待而浪费资源。
 
 为了防止已失效的连接请求报文段突然又传送到了服务端，因而产生错误。如果此时客户端发送的延迟的握手信息服务器收到，然后服务器进行响应，认为客户端要和它建立连接，此时客户端并没有这个意思，但 `server` 却以为新的运输连接已经建立，并一直等待 `client` 发来数据。这样，`server` 的很多资源就白白浪费掉了。
+

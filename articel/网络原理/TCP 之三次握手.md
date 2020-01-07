@@ -128,7 +128,7 @@ TCP 三次握手的过程掌握最重要的两点就是客户端和服务端状�
 
 - <font color=#A52A2A face="黑体">**初始状态**</font>：客户端处于 `closed(关闭) `状态，服务器处于 `listen(监听) ` 状态。
 
-[https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/%E5%88%9D%E5%A7%8B%E5%8C%96%E7%8A%B6%E6%80%81.png](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/初始化状态.png)
+[](https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/images/%E5%88%9D%E5%A7%8B%E5%8C%96%E7%8A%B6%E6%80%81.png)
 
 
 

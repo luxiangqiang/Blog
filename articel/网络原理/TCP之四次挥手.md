@@ -22,7 +22,7 @@
 
 ### 一、思维导图
 
-[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/思维导图.png)
+![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/思维导图.png)
 
 
 
@@ -44,7 +44,7 @@ TCP 的三次握手和四次分手和你恋爱是一模一样的，从相识到�
 
 
 
-[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/发送延迟.gif)
+![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/发送延迟.gif)
 
 
 
@@ -52,13 +52,13 @@ TCP 的三次握手和四次分手和你恋爱是一模一样的，从相识到�
 
 
 
-[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/2.gif)
+![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/2.gif)
 
 
 
 突然，到了第二天，发给第一个女孩的信息才收到，女孩认为你要和他表白，此时你已经和另一个女孩恋爱了，然后第一个女孩给你发微信同意了你的表白，但是你不理睬，那个女孩还在苦苦等待你给她分享此时的高兴心情。现在我们发现如果没有分享高兴的心情给女孩（也就是第三次握手过程），那么那个女孩一直等待，白白浪费了心思，所谓的千年都等不了一回。
 
-[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/3.gif)
+![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/3.gif)
 
 
 
@@ -80,7 +80,7 @@ TCP 的三次握手和四次分手和你恋爱是一模一样的，从相识到�
 
 
 
-[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/4.gif)
+![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/4.gif)
 
 
 
@@ -93,7 +93,7 @@ TCP 的三次握手和四次分手和你恋爱是一模一样的，从相识到�
 
 初始化状态：客户端和服务端都在连接状态，接下来开始进行四次分手断开连接操作。
 
-[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/5.png)
+![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/5.png)
 
 
 
@@ -101,23 +101,25 @@ TCP 的三次握手和四次分手和你恋爱是一模一样的，从相识到�
 
 > 假如客户端发送的数据已经发送完毕，发送FIN = 1 告诉服务端，客户端所有数据已经全发完了，服务端你可以关闭接收了，但是如果你们服务端有数据要发给客户端，客户端照样可以接收的。此时客户端处于FIN = 1等待服务端确认释放连接状态。
 
-[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/第一次分手.gif)
+![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/第一次分手.gif)
 
 
 
 - 第二次分手：服务端接收到客户端的释放请求连接之后，知道客户端没有数据要发给自己了，然后服务端发送ACK = 1告诉客户端受到你发给我的信息，此时服务端处于 CLOSE_WAIT 等待关闭状态。
 
-[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/第二次分手.gif)
+![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/第二次分手.gif)
 
 
 
 - 第三次分手：此时服务端向客户端把所有的数据发送完了，然后发送一个FIN = 1，用于告诉客户端，服务端的所有数据发送完毕，客户端你也可以关闭接受数据连接了。此时服务端状态处于LAT_ACK状态，来等待确认客户端是否收到了自己的请求。
 
-[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/第三次分手.gif)
+![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/第三次分手.gif)
 
 
 
-- 第四次分手：此时如果客户端收到了服务端发送完的信息之后，就发送ACK = 1，告诉服务端，客户端已经收到了你的信息。但是我们发现上图中有一个 2 MSL 的延迟等待。[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/第四次分手.gif)
+- 第四次分手：此时如果客户端收到了服务端发送完的信息之后，就发送ACK = 1，告诉服务端，客户端已经收到了你的信息。但是我们发现上图中有一个 2 MSL 的延迟等待。
+
+  ![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/第四次分手.gif)
 
 
 
@@ -142,7 +144,7 @@ TCP 的三次握手和四次分手和你恋爱是一模一样的，从相识到�
 
 最后小鹿为大家整理的三次握手和四次分手整张图，如下：
 
-[](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/三次四次示意图.png)
+![](https://github.com/luxiangqiang/Blog/blob/master/articel/网络原理/images/四次挥手/三次四次示意图.png)
 
 最后希望你和你的女朋友永远三次握手，永不四次分手。
 

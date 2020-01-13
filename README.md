@@ -2,7 +2,11 @@
 
 # 小鹿的博客
 
-## 更新时间
+### 更新日志
+
+- #### 2019/4/1
+
+  开始发布  LeetCode 算法题解题思路，30天锻炼自己多种解题思路，用心记录每道算法题的收获，后续会转化为动画版本。
 
 - #### 2019 5/16 
 
@@ -14,13 +18,23 @@
 
 - #### 2020/1/7  
 
-  开始将所有的**剑指 offer** 题目以**「动画的形式」**展现，代码包括 **JavaScript 版、Java版本、Python版本**解题思路、总结、代码测试。
+  开始将所有的**剑指 offer** 题目以「**动画的形式**」展现，代码包括 **JavaScript 版、Java版本、Python版本**解题思路、总结、代码测试。
+
+- #### 2020/1/13
+
+  开始整理《大前端吊打面试官系列》面试知识点，从面试前简历的准备到知识点的总结，全面复盘大前端面试知识，实时更新，实时补充。
 
 
 
 ## 目录
 
-#### 数据结构与算法系列：
+#### 《LeetCode 系列》
+
+[LeetCode 题目全面解析](https://github.com/luxiangqiang/JS-LeetCode)
+
+<br>
+
+#### 《数据结构与算法系列》
 
 **第一期：**[数据结构与算法之递归系列](https://github.com/luxiangqiang/Blog/blob/master/articel/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%B3%BB%E5%88%97/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E9%80%92%E5%BD%92%E7%B3%BB%E5%88%97.md)
 
@@ -30,7 +44,7 @@
 
 <br>
 
-#### 网络原理系列：
+#### 《网络原理系列》
 
 **第一期：**[网络层次模型划分（上）](https://github.com/luxiangqiang/Blog/blob/master/articel/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/%E7%BD%91%E7%BB%9C%E5%88%86%E5%B1%82%E5%88%92%E5%88%86%EF%BC%88%E4%B8%8A%EF%BC%89.md)
 
@@ -42,7 +56,15 @@
 
 <br>
 
-#### 剑指 offer
+#### 《剑指 offer 系列》
 
-[剑指 offer 所有题型动画解析](https://github.com/luxiangqiang/JianZhi-Offer_JavaScript)
+[剑指 offer 所有题型动画解析仓库](https://github.com/luxiangqiang/JianZhi-Offer_JavaScript)
+
+<br>
+
+#### 《大前端吊打面试官系列》
+
+[大前端面试系列入口](https://github.com/luxiangqiang/Web-interview)
+
+
 

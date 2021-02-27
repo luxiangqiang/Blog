@@ -24,7 +24,9 @@
 
   开始整理《大前端吊打面试官系列》面试知识点，从面试前简历的准备到知识点的总结，全面复盘大前端面试知识，实时更新，实时补充。
 
+- #### 2020/2/18
 
+  开始整理 2021 javascript 进阶，每周持续更新中～
 
 ## 目录
 
@@ -67,4 +69,12 @@
 [大前端面试系列入口](https://github.com/luxiangqiang/Web-interview)
 
 
+<br>
 
+#### JavaScript 进阶
+
+#### 2021
+
+**第一期:**[日常开发 26 个常见的 JavaScript 代码优化方案](https://github.com/luxiangqiang/Blog/blob/master/articel/2021/%E3%80%902021%20%E7%AC%AC%E4%B8%80%E6%9C%9F%E3%80%91%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%2026%20%E4%B8%AA%E5%B8%B8%E8%A7%81%E7%9A%84%20JavaScript%20%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88.md)
+
+<br>

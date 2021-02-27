@@ -1,6 +1,6 @@
 # 【2021 第一期】:日常开发 26 个常见的 JavaScript 代码优化方案
 
-本篇文章整理了在日常开发中 30 个常见的 JavaScript 代码优化方案。
+本篇文章整理了在日常开发中 26 个常见的 JavaScript 代码优化方案。
 
 >本文章已在 [Github blog](https://github.com/luxiangqiang/Blog) 收录，也可在掘金社会同步阅读（[戳我]()）。欢迎大伙儿～ Star，文章中若存在不足或者 issues，欢迎在下方或 Github 留言！
 

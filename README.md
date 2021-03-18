@@ -77,4 +77,9 @@
 
 **第一期:**[日常开发 26 个常见的 JavaScript 代码优化方案](https://github.com/luxiangqiang/Blog/blob/master/articel/2021/%E3%80%902021%20%E7%AC%AC%E4%B8%80%E6%9C%9F%E3%80%91%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%2026%20%E4%B8%AA%E5%B8%B8%E8%A7%81%E7%9A%84%20JavaScript%20%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88.md)
 
+**第二期:**[【2021 第二期】简而不单，单而不简的执行上下文](https://github.com/luxiangqiang/Blog/blob/master/articel/2021/%E3%80%902021%20%E7%AC%AC%E4%BA%8C%E6%9C%9F%E3%80%91%E7%AE%80%E8%80%8C%E4%B8%8D%E5%8D%95%EF%BC%8C%E5%8D%95%E8%80%8C%E4%B8%8D%E7%AE%80%E7%9A%84%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87.md)
+
+
+**第三期:**[【2021 第三期】被面试官最爱问的作用域与作用域链](https://github.com/luxiangqiang/Blog/blob/master/articel/2021/%E3%80%902021%20%E7%AC%AC%E4%B8%89%E6%9C%9F%E3%80%91%E8%A2%AB%E9%9D%A2%E8%AF%95%E5%AE%98%E6%9C%80%E7%88%B1%E9%97%AE%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE.md)
+
 <br>
